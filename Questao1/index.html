@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda - Lab de APIs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4">Conversor de Moeda</h1>
+        <label class="block mb-2">Valor:</label>
+        <input type="number" id="valor" class="border p-2 w-full mb-4">
+
+        <label class="block mb-2">Moeda de Origem (ex: USD):</label>
+        <input type="text" id="moedaOrigem" class="border p-2 w-full mb-4">
+
+        <label class="block mb-2">Moedas de Destino (separadas por vírgula):</label>
+        <input type="text" id="moedasDestino" class="border p-2 w-full mb-4">
+
+        <button id="converter" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Converter</button>
+
+        <div id="resultado" class="mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

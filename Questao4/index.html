@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Biblioteca com Empréstimos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Biblioteca com Empréstimos</h1>
+
+  <form id="formLivro">
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="autor" placeholder="Autor" required>
+    <button type="submit">Adicionar Livro</button>
+  </form>
+
+  <div id="resumo">
+    <h2>Resumo:</h2>
+    <p><strong>Total de empréstimos:</strong> <span id="total"></span></p>
+    <p><strong>Livros disponíveis:</strong></p>
+    <ul id="disponiveis"></ul>
+    <p><strong>Títulos emprestados:</strong></p>
+    <ul id="emprestados"></ul>
+  </div>
+
+  <div id="biblioteca"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

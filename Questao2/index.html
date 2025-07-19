@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filmes com OMDb API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f2f2f2;
+    }
+    input, button {
+      padding: 8px;
+      margin-right: 10px;
+    }
+    .filme {
+      background: white;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Buscar Filmes (após 2000)</h1>
+  <input type="text" id="tituloInput" placeholder="Digite o título do filme">
+  <button onclick="buscarFilmes()">Buscar</button>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
